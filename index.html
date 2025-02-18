@@ -1,5 +1,27 @@
-<h1>Hellooooo</h1>
-<div class="hello">
-    <h1>Good morning</h1>
-    <h2>Good afternoon</h2>
-</div>
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Bus Booking System</title>
+</head>
+<body>
+
+    <h2>Search Bus</h2>
+
+    <!-- Form for collecting search data -->
+    <form action="search_bus.php" method="post">
+        <label for="date">Date of Journey:</label>
+        <input type="date" id="date" name="date" required><br><br>
+
+        <label for="origin">Origin:</label>
+        <input type="text" id="origin" name="origin" required><br><br>
+
+        <label for="destination">Destination:</label>
+        <input type="text" id="destination" name="destination" required><br><br>
+
+        <input type="submit" value="Search Bus">
+    </form>
+
+</body>
+</html>
