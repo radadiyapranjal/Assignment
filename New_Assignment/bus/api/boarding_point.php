@@ -1,7 +1,5 @@
 <?php
-include '../includes/call_api.php';
-
-function getBoardingPoint($userIp, $searchTokenId, $resultIndex) {
+function getBoardingPoints($userIp, $searchTokenId, $resultIndex) {
     $url = "https://staging.mmrtrip.in/api/busservice/rest/boardingpoint";
     $data = [
         "UserIp" => $userIp,
@@ -10,4 +8,5 @@ function getBoardingPoint($userIp, $searchTokenId, $resultIndex) {
     ];
     return callAPI($url, $data);
 }
+
 ?>

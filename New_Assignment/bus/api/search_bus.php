@@ -1,5 +1,5 @@
 <?php
-include '../includes/call_api.php';
+
 
 function searchBus($userIp, $dateOfJourney, $originId, $destinationId) {
     $url = "https://staging.mmrtrip.in/api/busservice/rest/search";
@@ -11,4 +11,6 @@ function searchBus($userIp, $dateOfJourney, $originId, $destinationId) {
     ];
     return callAPI($url, $data);
 }
+
+
 ?>

@@ -1,6 +1,4 @@
 <?php
-include '../includes/call_api.php';
-
 function blockSeat($userIp, $searchTokenId, $resultIndex, $boardingPointId, $droppingPointId, $passengerDetails) {
     $url = "https://staging.mmrtrip.in/api/busservice/rest/blockseat";
     $data = [
@@ -13,4 +11,5 @@ function blockSeat($userIp, $searchTokenId, $resultIndex, $boardingPointId, $dro
     ];
     return callAPI($url, $data);
 }
+
 ?>
